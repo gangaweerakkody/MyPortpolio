@@ -18,13 +18,14 @@ const ProjectCard = ({title, description, image, link}) => (
 const Projects = () => {
     return (
       <Box id="projects" sx={{ py: 5 }}>
-        <Typography variant="h3" textAlign="center" gutterBottom>Projects</Typography>
+        <Typography variant="h3" textAlign="center"  gutterBottom>Projects</Typography>
         <Grid container spacing={4} justifyContent="center">
-          <Grid item>
+          <Grid item >
             <ProjectCard
               title="Tool Management System"
               description="A tool tracking app for construction sites."
               image="https://via.placeholder.com/300"
+             
               link="#"
             />
           </Grid>

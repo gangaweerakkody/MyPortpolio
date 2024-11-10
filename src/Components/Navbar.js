@@ -22,7 +22,9 @@ const Navbar = () => {
         <Button color="inherit" component={Link} to="about" smooth>About</Button>
         <Button color="inherit" component={Link} to="skills" smooth>Skills</Button>
         <Button color="inherit" component={Link} to="projects" smooth>Projects</Button>
+        <Button color="inherit" component={Link} to="Services" smooth>Services</Button>
         <Button color="inherit" component={Link} to="contact" smooth>Contact</Button>
+   
       </Toolbar>
     </AppBar>
   );
