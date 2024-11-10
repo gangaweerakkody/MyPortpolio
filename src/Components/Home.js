@@ -5,11 +5,10 @@ import Profile from '../Images/Profile.jpg';
 
 const Home = () => {
   return (
-    <Box  id="home" sx={{ backgroundColor: grey[100], color: grey[800], padding: '30px 0' }}>
+    <Box  id="home" sx={{ backgroundColor:'#BA55D3', padding: '30px 0' }}>
       <Container maxWidth="lg">
        
 
-        {/* About Me Section */}
         <Box my={15} display="flex" justifyContent="space-between" alignItems="center">
           <Grid container spacing={3} alignItems="center">
             <Grid item xs={12} md={4}>
@@ -18,7 +17,7 @@ const Home = () => {
               width: 250,
               height: 250,
               borderRadius: '50%',
-              overflow: 'hidden', // Crop image edges
+              overflow: 'hidden', 
               display: 'inline-block',
               backgroundImage: `url(${Profile})`,
               backgroundSize: 'cover',
@@ -31,17 +30,17 @@ const Home = () => {
             }}
           />
             </Grid>
-            <Grid item xs={15} md={8}>
+            <Grid item xs={15} md={8} color='white'>
             <Typography variant="h3" fontWeight="bold">
-            I am Isuru Ganga Weerakkody
+            I'm Isuru Ganga Weerakkody
           </Typography>
               <Typography variant="h5" color="textSecondary">
             Freelance Web Designer & Developer
           </Typography>
-              <Button variant="outlined" color="warning" sx={{ mr: 2 }}>
+              <Button variant="outlined" color="#BA55D3" sx={{ mr: 2 }}>
                 Hire Me
               </Button>
-              <Button variant="outlined" color="warning">
+              <Button variant="outlined" color="#BA55D3">
                 Download CV
               </Button>
             </Grid>

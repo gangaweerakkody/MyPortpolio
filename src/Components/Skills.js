@@ -7,7 +7,7 @@ import DevicesIcon from '@mui/icons-material/Devices';
 
 const Skills = () => {
     return (
-        <Box id="skills" sx={{ py: 5, backgroundColor: '#f4f4f4' }}>
+        <Box id="skills" color='white' sx={{ py: 5, backgroundColor: '#BA55D3' }}>
           <Typography variant="h3" textAlign="center" gutterBottom>Skills</Typography>
           <Grid container spacing={4} justifyContent="center">
             <Grid item>
