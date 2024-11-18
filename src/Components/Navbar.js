@@ -7,16 +7,15 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll';
 import Button from '@mui/material/Button';
+import logo from '../Images/logo.png'
 
 const Navbar = () => {
   return ( 
-    <AppBar position="fixed" sx={{backgroundColor:"#BA55D3"}}>
+    <AppBar position="fixed" image={logo} sx={{backgroundColor:"#BA55D3"}}>
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-          <MenuIcon />
-        </IconButton>
+        
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
-         IG
+         W.A.I.Ganga
         </Typography>
         <Button color="inherit" component={Link} to="home" smooth>Home</Button>
         <Button color="inherit" component={Link} to="about" smooth>About</Button>
