@@ -33,7 +33,7 @@ const skillsData = [
 
 const Skills = () => {
     return (
-        <Box id="skills" color="white" sx={{ py: 5, backgroundColor: '#BA55D3' }}>
+        <Box id="skills" color="#BA55D3" sx={{ py: 5 }}>
             <Typography variant="h3" textAlign="center" gutterBottom>
                 Skills
             </Typography>

@@ -8,6 +8,7 @@ import Skills from './Components/Skills';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Services from './Components/Services';
+import PortfolioChatBot from './Components/PortfolioChatBot';
 function App() {
   return (
     <div>
@@ -18,6 +19,8 @@ function App() {
       <About/>
       <Services/>
       <Contact/>
+     
+
     </div>
   );
 }

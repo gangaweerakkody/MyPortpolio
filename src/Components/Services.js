@@ -40,9 +40,9 @@ const Services = () => {
           'Web Design',
           'Web Development',
           'Photo Editing',
-          'Marketing',
-          'SEO & SMM',
-          'E-Commerce',
+           
+       
+        
         ].map((service, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card
