@@ -98,7 +98,8 @@ const Contact = () => {
                             <Button
                                 type="submit"
                                 variant="contained"
-                                color="primary"
+                                color='#BA55D3'
+                                
                                 sx={{
                                     px: 5,
                                     py: 1.5,
@@ -106,6 +107,7 @@ const Contact = () => {
                                     textTransform: 'none',
                                     fontWeight: 'bold',
                                     fontSize: '1rem',
+                                    
                                 }}
                             >
                                 Send Message

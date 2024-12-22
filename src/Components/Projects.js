@@ -1,17 +1,18 @@
 import React from 'react';
 import { Typography, Box, Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
-
+import toolImage from '../Images/ToolSystem.png';
+import BiddingSystem from '../Images/bidding.png'
 const projectsData = [
   {
     title: 'Tool Management System',
     description: 'A tool tracking app for construction sites.',
-    image: 'https://via.placeholder.com/300',
+    image: toolImage,
     link: '#',
   },
   {
-    title: 'E-Commerce Platform',
-    description: 'A modern online shopping platform with seamless user experience.',
-    image: 'https://via.placeholder.com/300',
+    title: 'Bidding System',
+    description: 'A online bidding platform with seamless user experience.',
+    image: BiddingSystem,
     link: '#',
   },
   {

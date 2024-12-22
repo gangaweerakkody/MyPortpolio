@@ -73,7 +73,7 @@ const About = () => {
             variant="contained"
             color="primary"
             startIcon={<LinkedInIcon />}
-            href="https://www.linkedin.com/in/your-linkedin-username" // Replace with your LinkedIn URL
+            href="https://www.linkedin.com/in/ganga-weerakkody-1587a92a9/" // Replace with your LinkedIn URL
             target="_blank"
             rel="noopener noreferrer"
             sx={{

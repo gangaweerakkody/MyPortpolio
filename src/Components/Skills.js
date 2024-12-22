@@ -55,12 +55,12 @@ const Skills = () => {
                                                 flexDirection: 'column',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
-                                                backgroundColor: '#4B0082',
+                                                backgroundColor: '#BA55D3',
                                                 color: 'white',
                                                 '&:hover': {
                                                     transform: 'scale(1.1)',
                                                     transition: 'transform 0.3s ease-in-out',
-                                                    backgroundColor: '#7B68EE',
+                                                    
                                                 },
                                             }}
                                         >
