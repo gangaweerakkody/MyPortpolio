@@ -1,7 +1,8 @@
 import React from 'react';
 import { Typography, Box, Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
 import toolImage from '../Images/ToolSystem.png';
-import BiddingSystem from '../Images/bidding.png'
+import BiddingSystem from '../Images/bidding.png';
+
 const projectsData = [
   {
     title: 'Tool Management System',
@@ -11,7 +12,7 @@ const projectsData = [
   },
   {
     title: 'Bidding System',
-    description: 'A online bidding platform with seamless user experience.',
+    description: 'An online bidding platform with a seamless user experience.',
     image: BiddingSystem,
     link: '#',
   },
@@ -30,13 +31,15 @@ const ProjectCard = ({ title, description, image, link }) => (
       transition: 'transform 0.3s, box-shadow 0.3s',
       '&:hover': {
         transform: 'translateY(-10px)',
-        boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)',
+        boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)',
       },
+      borderRadius: '10px',
+      overflow: 'hidden',
     }}
   >
-    <CardMedia component="img" height="180" image={image} alt={title} />
-    <CardContent>
-      <Typography variant="h5" fontWeight="bold" gutterBottom>
+    <CardMedia component="img" height="200" image={image} alt={title} />
+    <CardContent sx={{ backgroundColor: 'white' }}>
+      <Typography variant="h5" fontWeight="bold" gutterBottom color="text.primary">
         {title}
       </Typography>
       <Typography variant="body2" color="text.secondary" gutterBottom>
@@ -47,7 +50,11 @@ const ProjectCard = ({ title, description, image, link }) => (
         color="primary"
         href={link}
         target="_blank"
-        sx={{ mt: 2 }}
+        sx={{
+          mt: 2,
+          backgroundColor: '#8A2BE2',
+          '&:hover': { backgroundColor: '#5D3FD3' },
+        }}
       >
         Learn More
       </Button>
@@ -62,16 +69,19 @@ const Projects = () => {
       sx={{
         py: 8,
         px: 3,
-        background: 'linear-gradient(to bottom, #BA55D3, #8A2BE2)',
+        background: 'linear-gradient(to bottom, #4A148C, #BA55D3)',
         color: 'white',
+        textAlign: 'center',
       }}
     >
       <Typography
         variant="h3"
         fontWeight="bold"
-        textAlign="center"
         gutterBottom
-        sx={{ mb: 5 }}
+        sx={{
+          mb: 5,
+          textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
+        }}
       >
         Projects
       </Typography>

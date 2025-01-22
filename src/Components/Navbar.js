@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
 import { Drawer, IconButton } from '@mui/material';
 import { Close as CloseIcon } from '@mui/icons-material';
-import PortfolioChatBot from './PortfolioChatBot'; // Make sure this path is correct
+import PortfolioChatBot from './PortfolioChatBot'; // Ensure this path is correct
 
 const Navbar = () => {
   const [openChat, setOpenChat] = useState(false);
@@ -21,19 +21,64 @@ const Navbar = () => {
 
   return (
     <>
-      {/* AppBar for the navigation */}
-      <AppBar position="fixed" sx={{ backgroundColor: "#BA55D3" }}>
+      {/* AppBar for navigation */}
+      <AppBar
+        position="fixed"
+        sx={{
+          background: 'linear-gradient(to right, #4A148C, #BA55D3)',
+          paddingX: 2,
+          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+          fontFamily: '"Poppins", sans-serif',
+        }}
+      >
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            W.A.I.Ganga
+          <Typography
+            variant="h6"
+            sx={{
+              flexGrow: 1,
+              fontWeight: 'bold',
+              color: 'white',
+              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+            }}
+          >
+            W.A.I. Ganga
           </Typography>
-          <Button color="inherit" component={Link} to="home" smooth>Home</Button>
-          <Button color="inherit" component={Link} to="about" smooth>About</Button>
-          <Button color="inherit" component={Link} to="skills" smooth>Skills</Button>
-          <Button color="inherit" component={Link} to="projects" smooth>Projects</Button>
-          <Button color="inherit" component={Link} to="Services" smooth>Services</Button>
-          <Button color="inherit" component={Link} to="contact" smooth>Contact</Button>
-          <Button color="inherit" onClick={handleOpenChat}>Chat</Button>
+          {['Home', 'About', 'Skills', 'Projects', 'Services', 'Contact'].map((section) => (
+            <Button
+              key={section}
+              color="inherit"
+              component={Link}
+              to={section.toLowerCase()}
+              smooth
+              sx={{
+                color: 'white',
+                fontWeight: '500',
+                textTransform: 'capitalize',
+                fontSize: '14px',
+                mx: 1,
+                '&:hover': {
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                },
+              }}
+            >
+              {section}
+            </Button>
+          ))}
+          <Button
+            onClick={handleOpenChat}
+            sx={{
+              color: 'white',
+              fontWeight: '500',
+              textTransform: 'capitalize',
+              backgroundColor: 'rgba(255, 255, 255, 0.2)',
+              px: 2,
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.3)',
+              },
+            }}
+          >
+            Chat
+          </Button>
         </Toolbar>
       </AppBar>
 
@@ -43,11 +88,10 @@ const Navbar = () => {
         open={openChat}
         onClose={handleCloseChat}
         sx={{
-          width: '400px',
-          flexShrink: 0,
           '& .MuiDrawer-paper': {
             width: '400px',
-            backgroundColor: '#f5f8fb',
+            backgroundColor: 'linear-gradient(to bottom, #f5f8fb, #e8eaf6)',
+            boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
             padding: '20px',
             display: 'flex',
             flexDirection: 'column',
@@ -55,7 +99,7 @@ const Navbar = () => {
           },
         }}
       >
-        <IconButton onClick={handleCloseChat} sx={{ alignSelf: 'flex-end' }}>
+        <IconButton onClick={handleCloseChat} sx={{ alignSelf: 'flex-end', color: '#BA55D3' }}>
           <CloseIcon />
         </IconButton>
         <PortfolioChatBot />
